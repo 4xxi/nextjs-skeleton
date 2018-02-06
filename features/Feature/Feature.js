@@ -1,3 +1,3 @@
 import React from 'react';
 
-export const Feature = () => <div>Hello world!</div>;
+export const Feature = () => <p>Hello world!</p>;

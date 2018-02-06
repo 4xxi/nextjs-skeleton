@@ -1,0 +1,22 @@
+{
+  "presets": [["env", { "modules": "commonjs" }], "next/babel"],
+  "plugins": [
+    ["transform-define", "./env-config.js"],
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "features": "./features",
+          "components": "./components",
+          "common": "./common",
+          "root": "./root"
+        }
+      }
+    ],
+    [
+      "styled-components",
+      { "ssr": true, "displayName": true, "preprocess": false }
+    ]
+  ]
+}

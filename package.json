@@ -1,14 +1,50 @@
 {
   "name": "nextjs-skeleton",
   "version": "1.0.0",
-  "description": "Boilerplate for React ecosystem application with SSR based on Next.js",
+  "description":
+    "Boilerplate for React ecosystem application with SSR based on Next.js",
   "repository": "git@github.com:4xxi/nextjs-skeleton.git",
   "author": "Vladimir Cibizov <vcibizov@4xxi.com>",
   "private": true,
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest",
+    "precommit": "lint-staged"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^common(.*)$": "<rootDir>/common",
+      "^components(.*)$": "<rootDir>/components",
+      "^features(.*)$": "<rootDir>/features",
+      "^root(.*)$": "<rootDir>/root"
+    },
+    "testPathIgnorePatterns": ["./node_modules/"]
+  },
+  "lint-staged": {
+    "linters": {
+      "common/**/*.js": [
+        "prettier --single-quote --trailing-comma all --write",
+        "eslint --fix",
+        "git add"
+      ],
+      "features/**/*.js": [
+        "prettier --single-quote --trailing-comma all --write",
+        "eslint --fix",
+        "git add"
+      ],
+      "pages/**/*.js": [
+        "prettier --single-quote --trailing-comma all --write",
+        "eslint --fix",
+        "git add"
+      ],
+      "root/**/*.js": [
+        "prettier --single-quote --trailing-comma all --write",
+        "eslint --fix",
+        "git add"
+      ]
+    }
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
@@ -22,6 +58,9 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.5.0",
     "eslint-plugin-react": "^7.6.1",
+    "husky": "^0.14.3",
+    "jest": "^22.1.4",
+    "lint-staged": "^6.1.0",
     "prettier": "^1.10.2"
   },
   "dependencies": {
