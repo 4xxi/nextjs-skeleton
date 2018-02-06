@@ -1,0 +1,50 @@
+{
+  "name": "nextjs-skeleton",
+  "version": "1.0.0",
+  "description": "Boilerplate for React ecosystem application with SSR based on Next.js",
+  "repository": "git@github.com:4xxi/nextjs-skeleton.git",
+  "author": "Vladimir Cibizov <vcibizov@4xxi.com>",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-plugin-styled-components": "^1.5.0",
+    "babel-plugin-transform-define": "^1.3.0",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.5.0",
+    "eslint-plugin-react": "^7.6.1",
+    "prettier": "^1.10.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.2.5",
+    "axios": "^0.17.1",
+    "classnames": "^2.2.5",
+    "dotenv": "^5.0.0",
+    "js-cookie": "^2.2.0",
+    "next": "^5.0.0",
+    "next-redux-saga": "^1.0.1",
+    "next-redux-wrapper": "^1.3.5",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-loader": "^2.0.10",
+    "raw-loader": "^0.5.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^3.2.0",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1",
+    "style-loader": "^0.20.1",
+    "styled-components": "^3.1.2"
+  }
+}
